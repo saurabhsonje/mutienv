@@ -9,6 +9,12 @@ on:
 jobs:
   call_reusable_workflow:
        uses: saurabhsonje/githubaction/.github/workflows/main.yml@main
-      #with: 
-      #   lambda_function_name: ""
-      #   dockerfile_path :
+       with: 
+        lambda_function_name: "nodejs_lambda_function"
+       secrets:
+             aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_ID}}
+             aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
+             aws-region: ${{secrets.AWS_REGION}}
+           
+            
+        
