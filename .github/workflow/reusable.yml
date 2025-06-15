@@ -9,7 +9,10 @@ on:
 jobs:
   reusable-deploy:
     runs-on: ubantu-latest
-    steps:
-      name: 
       uses: saurabhsonje/githubaction/.github/workflows/main.yml@main
-
+      # with: 
+      #   lambda_function_name: ""
+      #   dockerfile_path :
+      
+         
+      
