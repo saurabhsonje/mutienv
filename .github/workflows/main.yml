@@ -1,0 +1,14 @@
+name: example of resubale workflow
+
+on: 
+ push:
+   branaches:
+        - main
+
+
+jobs:
+  reusable-deploy:
+       uses: saurabhsonje/githubaction/.github/workflows/main.yml@main
+      # with: 
+      #   lambda_function_name: ""
+      #   dockerfile_path :
