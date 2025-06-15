@@ -4,6 +4,6 @@ exports.handler = async (event) => {
     headers: {
       'Content-Type': 'text/plain',
     },
-    body: 'Hello from Lambda containerized Node.js from reusable workflow\n',
+    body: 'Hello from Lambda containerized Node.js from reusable workflow1\n',
   };
 };
