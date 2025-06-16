@@ -1,5 +1,4 @@
 name: example of resubale workflow
-
 on: 
    push:
     branches:
